@@ -1,0 +1,9 @@
+.b-half {
+	width: 100%;
+}
+// TABLET
+@media(min-width:$breakpoint-small) {
+	.b-half {
+		width: 50%;
+	}
+}

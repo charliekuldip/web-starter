@@ -1,0 +1,92 @@
+.b-video {
+    position: relative;
+    // padding-bottom: 32px;
+    padding-bottom: 3.5%;
+
+    &--poster {
+        background-image: url($src+'logo-small.png');
+        background-size: contain;
+        background-size: (651/1440) * 100%;
+        // background-size: (760/1440) * 100%;
+        width: 100%;
+        padding-bottom: (540/960) * 100%;
+        background-position-y: 31%;
+
+        position: absolute;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+
+        cursor: pointer;
+        pointer-events: none;
+    }
+
+    &--play-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: (90/1440) * 100%;
+        height: (90/1440) * 200%;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;       
+
+        background-image:url($src+'play.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        svg {
+            // display: block;
+            display: none;
+            width: 100%;
+        }
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        // padding-bottom: 32px;
+        padding-bottom: 3.5%;
+        // width: (660/1440) * 100%;
+        width: (1100/1440) * 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $orange;
+    }
+
+    .b-video-el {
+        cursor: pointer;
+    }
+
+    // VIDEO CONTROLS CLASSES
+    .b-video--poster {
+        opacity: 0;
+        visibility: hidden;
+        background-color: white;
+        transition: opacity 200ms ease;
+    }
+    &.paused {
+        .b-video--poster {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 200ms ease;
+        }
+    }
+
+    @media(min-width: $breakpoint-small) {
+        padding-bottom: 20px;
+        &:after {
+            padding-bottom: 20px;
+            width: (660/1440) * 100%;
+            right: (20/1440) * 100%;
+        }
+    }
+}

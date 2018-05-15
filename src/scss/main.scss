@@ -1,0 +1,46 @@
+// $src: '../images/';
+$src: 'https://thisis.borngroup.com/hubfs/Bulldog/';
+
+@import './variables';
+@import '../../node_modules/normalize.css/normalize';
+@import './type';
+
+// REGISTRATION FORM
+@import './registration';
+
+// PARTIALS
+@import './partials/util';
+@import './partials/btn';
+@import './partials/block';
+@import './partials/text';
+@import './partials/list';
+@import './partials/item';
+@import './partials/icon';
+@import './partials/bg-image';
+@import './partials/wrapper';
+@import './partials/video';
+
+// LAYOUT
+@import './partials/layout';
+
+// SECTIONS
+@import './partials/header';
+@import './partials/hero1';
+@import './partials/block1';
+@import './partials/block2';
+@import './partials/block3';
+@import './partials/block4';
+@import './partials/footer';
+@import './partials/footer-list';
+
+body{
+	color: black;
+	font-family: $proxima;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+.site {
+	overflow-x: hidden;
+	position: relative;
+}

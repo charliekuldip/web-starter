@@ -1,0 +1,23 @@
+.b-text {
+    font-family: $proxima;
+    line-height: 1.5em;
+    margin-top: 0.7em;
+    margin-bottom: 1.7em;
+    text-align: left;
+
+    &--italic {
+        font-style: italic;
+    }
+
+    &--caslon {
+        font-family: $caslon;
+        font-size: 1.0625em;
+        line-height: 1.46em;
+        text-rendering: optimizeLegibility;
+    }
+
+    &--contact {
+        font-size: $font-small;
+        letter-spacing: 1px;
+    }
+}   

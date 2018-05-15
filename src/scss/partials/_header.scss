@@ -1,0 +1,125 @@
+.b-header {
+    text-align: center;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .b-textline {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: (272/300) * 100%;
+        max-width: 430px;
+
+        &--inner {
+            padding: 0.25em;
+            display: inline-block;
+            text-align: left;
+            min-width: 18.5em;
+
+            svg {
+                @media(max-width: 767px) {
+                    display: none;
+                }
+                display: block;
+                margin-bottom: 0.25em;
+            }
+        }
+    }
+
+    .logo {
+        display: block;
+        width: (272/300) * 100%;
+        max-width: 430px;
+        margin: 1.85em auto 1em;
+
+        @media(min-width:476px) {
+            margin: 45px auto 28px;
+        }
+    }
+
+    .magento-imagine,
+    .info {
+        display: block;
+    }
+
+    .magento-imagine {
+        font-size: $font-xmedium;
+        letter-spacing: 0.0275em;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 0.35em;
+
+        .at {
+            text-transform: lowercase;
+            font-weight: normal;
+            font-family: $caslon;
+            font-style: italic;
+        }
+    }
+
+    .info {
+        font-weight: 600;
+        line-height: 1.69;
+    }
+
+    .seeing,
+    .info {
+        font-size: $font-small;
+    }
+
+    @media(min-width:$breakpoint-small) {
+        flex-direction: row;
+
+        > * {
+            flex-grow: 1;
+        }
+
+        .logo {
+            width: 31%;
+            // margin: ((41.3/1440) * 100%) auto;
+            margin: 3.2% auto;
+        }
+
+        .b-textline {
+            justify-content: flex-end;
+            padding-top: 1.75em;
+
+            width:auto;
+            max-width:none;
+
+            &:first-of-type {
+                flex-grow: 1.16;
+
+                .b-textline--inner {
+                    margin-bottom: -0.25em;
+                }
+            }
+            
+            &--inner {
+                min-width:0;
+            }
+        }
+
+        .magento-imagine {
+            font-size: $font-xxmedium;
+        }
+    }
+
+    @media(min-width:$breakpoint-medium ) {
+        width: (1320/1440) * 100%;
+        max-width: 1320px;
+
+        .seeing,
+        .info {
+            font-size: $font-normal;
+        }
+    }
+    
+
+    @media(min-width: 1440px) {
+        .logo {
+            margin: 43px auto;
+        }
+    }
+}

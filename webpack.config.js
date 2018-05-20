@@ -6,7 +6,7 @@ const path = require("path");
 module.exports = {
     entry: {
         app: ["./src/js/app.js"],
-        vendor: ['imagesloaded', 'promise', 'qs', 'slick-carousel', 'onscreen', 'vanilla-tilt']
+        vendor: ['imagesloaded', 'promise', 'qs', 'slick-carousel', 'onscreen']
     },
     devtool: '#eval-source-map',
     module: {

@@ -1,5 +1,5 @@
 {
-  "name": "imagine-one-page",
+  "name": "web-starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "watch:css-compilation": "nodemon -e css --watch dist/css -x npm run bs-reload",
     "watch:html": "nodemon -e html --watch dist/ -x npm run bs-reload"
   },
-  "author": "",
+  "author": "Charles Davis",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.4.1",
@@ -47,7 +47,6 @@
     "promise": "^7.1.1",
     "qs": "^6.2.1",
     "selectric": "^1.11.0",
-    "slick-carousel": "^1.6.0",
-    "vanilla-tilt": "^1.4.1"
+    "slick-carousel": "^1.6.0"
   }
 }
